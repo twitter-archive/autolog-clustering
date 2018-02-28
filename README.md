@@ -8,27 +8,27 @@ thrift -out jsgen/ --gen js:node example.thrift
 ```
 
 ### Requirements
-* Python: `$ pip install -r requirements.txt`,
-* Node.js: `$ npm install`,
+* Python: `$ pip install thrift`,
+* Node.js: `$ npm install thrift`,
 * Code generator: [Apache Thrift](https://thrift.apache.org/) (requires only for development).
 
 ### Run
-* Server: `$ ./python.py`,
-* Python client: `$ ./client.py` or `$ python ./client.py`,
-* Node.js client: `$ ./client.js` or `$ node ./client.js`.
+* Server: `$ python ./server.py`,
+* Python client: `$ ./client.py` or `$ python client.py`,
+* Node.js client: `$ ./client.js` or `$ node client.js`.
 
 ### Output
 ```bash
-$ ./server.py
+$ python server.py
 Starting python server...
 Hello from Python!
 Hello from JavaScript!
 ```
 ```bash
-$ ./client.py
-pong
+$ python client.py
+\\ output
 ```
 ```bash
-$ ./client.js
-pong
+$ node client.js
+\\ output
 ```
