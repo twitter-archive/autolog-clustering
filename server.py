@@ -21,7 +21,7 @@ class ExampleHandler:
     def tensorflow_hello(self):
         hello = tf.constant('Hello, TensorFlow!')
         sess = tf.Session()
-        return "tensorflow works?: " + sess.run(hello) 
+        return "tensorflow works?: " + str(sess.run(hello))
 
     def say(self, msg):
         print(msg)
