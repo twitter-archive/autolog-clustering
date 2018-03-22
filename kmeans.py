@@ -10,7 +10,6 @@ from sklearn.cluster import KMeans
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
-
 # ------------------------------
 # READ IN DATA
 # ------------------------------
@@ -59,7 +58,7 @@ kmeans.fit(good_columns)
 labels = kmeans.labels_
 
 # ------------------------------
-# USING PCA TO PLOT A 2-DIMENSIONAL PLOT
+# USING PCA TO PLOT A 2-DIMENSIONAL GRAPH
 # ------------------------------
 
 # Create a PCA model.

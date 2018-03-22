@@ -11,7 +11,7 @@ data = pd.read_json("1500.json")
 # X = ma[:,[1,10]]
 X = data[['facet_1', 'facet_10', 'facet_2', 'facet_3', 'facet_4', 'facet_5', 'facet_6', 'facet_7', 'facet_8', 'facet_9']]
 y_target = data['color']
-print(data.describe())
+# print(data.describe())
 y_train = set(y_target)
 
 
