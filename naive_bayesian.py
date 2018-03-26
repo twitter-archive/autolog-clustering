@@ -27,27 +27,12 @@ print("Percentage of mislabeled points out of a total %d points : %d" % ((X.shap
 # print((y_target != y_pred).sum())
 # print(y_pred)
 # print(y_prob)
-counter = 0
-max_probabilities = []
-for entry in y_prob:
-    # print("Entry", counter)
-    max = 0
-    for probability in entry:
-        # print(probability)
-        if(probability > max):
-            max = probability
-    max_probabilities.append(max)
-    counter+=1
 
+# max_probabilities = [max(entry) for entry in y_prob]
 # print(max_probabilities)
 
-bad = 0
-good = 0
-for probability in max_probabilities:
-    if(probability >= 0.5):
-        good+=1
-    else:
-        bad+=1
+good = sum(max(entry) > 0.5 for entry in y_prob)
+bad = y_prob.shape[0] - good
 
 print(y_train)
 print("Number of good predictions:", good)
