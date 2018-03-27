@@ -47,3 +47,4 @@ plt.scatter(x=plot_columns[:,0], y=plot_columns[:,1])
 # plt.scatter(max_probabilities, max_probabilities)
 
 plt.show()
+
